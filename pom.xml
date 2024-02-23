@@ -15,11 +15,12 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<maven.compiler.re  >17</maven.compiler.re>
+<!--		
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <JAVA_17_HOME>/opt/jdk-17.0.10</JAVA_17_HOME>		
+        <JAVA_17_HOME>/opt/jdk-17.0.10</JAVA_17_HOME>
+-->        		
 	</properties>
 	<dependencies>
 		<dependency>
