@@ -15,6 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.re  >17</maven.compiler.re>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -89,9 +90,11 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <verbose>true</verbose>
                 </configuration>
             </plugin>
-            <!--
+<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -101,7 +104,7 @@
                     <compilerVersion>17</compilerVersion>
                 </configuration>
             </plugin>
-            -->
+-->            
 		</plugins>
 	</build>
 
