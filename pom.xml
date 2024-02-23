@@ -91,6 +91,7 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -99,7 +100,8 @@
                     <executable>${JAVA_17_HOME}/bin/javac</executable>
                     <compilerVersion>17</compilerVersion>
                 </configuration>
-            </plugin>	
+            </plugin>
+            -->
 		</plugins>
 	</build>
 
