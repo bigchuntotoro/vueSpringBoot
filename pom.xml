@@ -96,7 +96,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.9.0</version>
                 <configuration>
-                    <executable>${JAVA_17_HOME}/bin/javac</executable>
+                    <executable>/opt/jdk-17.0.10/bin/javac</executable>
                     <compilerVersion>17</compilerVersion>
                 </configuration>
             </plugin>	
