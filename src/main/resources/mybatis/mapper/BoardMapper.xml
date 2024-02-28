@@ -11,7 +11,13 @@
 	</resultMap>
 	
 	<select id="getBoardList" resultMap="boardMap">
-		SELECT * FROM BOARD
+		SELECT 
+			bno,
+			title, 
+			content, 
+			writer, 
+			regDate
+		FROM BOARD
 	</select>
 	
 	<insert id="registBoard">
@@ -21,7 +27,14 @@
 	</insert>
 	
 	<select id="getBoardDetail" resultMap="boardMap">
-		SELECT * FROM BOARD WHERE bno = #{bno}
+		SELECT 
+			bno,
+			title, 
+			content, 
+			writer, 
+			regDate
+		FROM BOARD 
+		WHERE bno = #{bno}
 	</select>
 	
 	<update id="editBoard">
