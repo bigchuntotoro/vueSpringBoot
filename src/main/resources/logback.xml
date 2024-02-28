@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+ 
+<!-- 60초 파일 변경 확인 및 재시작 -->
+<configuration scan="true" scanPeriod="60 seconds">
+	<!-- logback 종료 -->
+	<shutdownHook />
+	
+	<!-- STDOUT(콘솔 로그 출력) -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyyMMdd HH:mm:ss.SSS} [%thread] %-3level %logger{5} - %msg %n</pattern>
+		</encoder>
+	</appender>
+ 
+	<!-- jdbc sql 관련 log level 설정 -->
+	<logger name="jdbc" level="OFF"/>
+	<logger name="jdbc.sqlonly" level="OFF"/>
+	<logger name="jdbc.sqltiming" level="INFO"/>
+	<logger name="jdbc.audit" level="OFF"/>
+	<logger name="jdbc.resultset" level="OFF"/>
+	<logger name="jdbc.resultsettable" level="INFO"/>
+	<logger name="jdbc.connection" level="OFF"/>
+	
+	<!-- root level : 기본적으로 설정할 log level -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+ 
+</configuration>
