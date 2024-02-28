@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <!-- 생성 파일 정보 -->
+    <Appenders>
+        <Console name="Console_Appender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %5p [%c] %m%n"/>
+        </Console>
+  
+    </Appenders>
+
+    <!-- 로그 범위  -->
+    <Loggers>
+        <!-- MyBatis 관련 로그 설정-->
+        <logger name="jdbc" level="OFF"/>
+        <logger name="jdbc.sqlonly" level="INFO" />
+		<logger name="jdbc.sqltiming" level="INFO" />
+        <logger name="jdbc.resultsettable" level="INFO"/>
+        <logger name="jdbc.audit" level="OFF"/>
+        <logger name="jdbc.resultset" level="OFF"/>
+        <logger name="jdbc.connection" level="OFF"/>
+
+        <!-- Default 세팅 -->
+        <root additivity="false" level="OFF">
+            <AppenderRef ref="Console_Appender"/>
+        </root>
+    </Loggers>
+</Configuration>
