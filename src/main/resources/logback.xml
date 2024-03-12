@@ -26,7 +26,7 @@
 		<file>${FILE_NAME}</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 			<fileNamePattern>${LOG_NAME_PATTERN}</fileNamePattern>
-			<maxHistory>${MAX_HISTORY}</maxHistory>
+<!--			<maxHistory>${MAX_HISTORY}</maxHistory>-->
 			<maxFileSize>10MB</maxFileSize>
 			<totalSizeCap>100MB</totalSizeCap>
 <!--			<maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
